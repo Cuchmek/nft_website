@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#2B2B2B]">
+    <header class="border-b-2 border-[white] pb-[30px]">
+        <div class="flex my-[20px] mx-[50px] h-[100px] items-center">
+            <a href="../index.html">
+                <img class="w-[400px] h-[200px] mt-[50px]" src="../images/mn.png" alt="" >
+            </a>
+            <div class="flex items-center ml-[290px]">
+                <nav  class="text-[white] mr-[10px]">
+                    <a href="../pages/market.html" class="px-[20px] ">Marketplace</a>
+                    <a href="../pages/rank.html" class="px-[20px] ">Rankings</a>
+                    <a href="../pages/connect.html" class="px-[20px] ">Connect a wallet</a>
+                </nav>
+                <a href="../pages/sing.html">
+                    <button class="flex w-[152px] h-[60px] bg-[#A259FF] rounded-[20px] text-[16px] text-[white] items-center justify-center"><img src="./images/User.png" alt="" class="pr-[12px]">Sign Up</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="w-[1280px] mx-auto mt-[80px]">
+        <div class="">
+            <h2 class="text-[white] text-[51px] font-bold mb-[20px]">Top Creators</h2>
+            <p class="text-[white] text-[22px]">Check out top ranking NFT artists on the NFT Marketplace.</p>
+        </div>
+    </section>
+    <section class="w-[1280px]  mx-auto mt-[80px] mb-[80px]">
+        <div class="flex justify-between"> 
+            <div class="">
+                <a href="" class="px-[102px] text-[gray] hover:text-[white] w-[262px] h-[60px] flex items-center rounded-[15px] 
+                border-2 border-transparent hover:border-[white] transition duration-300">Today</a>
+            </div>
+            <div class="">
+                <a href="" class="px-[90px] text-[gray] hover:text-[white] w-[262px] h-[60px] flex items-center rounded-[15px] 
+                border-2 border-transparent hover:border-[white] transition duration-300">This Week</a>
+            </div>
+            <div class="">
+                <a href="" class="px-[85px] text-[gray] hover:text-[white] w-[262px] h-[60px] flex items-center rounded-[15px] 
+                border-2 border-transparent hover:border-[white] transition duration-300">This Month</a>
+            </div>
+            <div class="">
+                <a href="" class="px-[100px] text-[gray] hover:text-[white] w-[262px] h-[60px] flex items-center rounded-[15px] 
+                border-2 border-transparent hover:border-[white] transition duration-300">All Time</a>
+            </div>
+
+        </div>
+        <div class="flex justify-between items-center pr-[250px] border-[#3B3B3B] border-[3px] my-[10px] rounded-[20px] h-[46px] pl-[30px]">
+            <p class="text-[#858584] text-[16px] ">#</p>
+            <p class="text-[#858584] text-[16px] ">Artist</p>
+            <p class="text-[#858584] text-[16px] ">Change</p>
+            <p class="text-[#858584] text-[16px] ">NFTs Sold</p>
+            <p class="text-[#858584] text-[16px] ">Volume</p>
+        </div>
+        <div id="rankList" class="flex flex-col bg-[frey]">
+        </div>
+    </section>
+    <footer class="bg-[#3B3B3B] h-[334px]">
+        <div class="flex w-[1140px] mx-auto pb-[30px] border-b-2 border-gray-500 pt-[40px]">
+            <div >
+                <img src="../images/logo.png" alt="">
+                <p class="text-[16px] text-[#CCCCCC] mt-[30px] mb-[20px]">NFT marketplace UI created with <br> Anima for Figma.</p>
+                <p class="text-[16px] text-[#CCCCCC] mb-[15px]">Join our community</p>
+                <div class="flex">
+                    <a href="https://www.instagram.com/">
+                        <img src="../images/InstagramLogo.png" alt="">
+                    </a>
+
+                    <a href="https://discord.com/">
+                        <img src="../images/DiscordLogo.png" alt="">
+                    </a>
+
+                    <a href="https://x.com/">
+                        <img src="../images/TwitterLogo.png" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="../images/YoutubeLogo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="ml-[115px] mr-[140px]">
+                <h1 class="text-[25px] text-[white] ">Explore</h1>
+                <a href="../pages/market.html">
+                    <p class="text-[#CCCCCC] text-[16px] mt-[20px]">Marketplace</p>
+                </a>
+                <a href="../pages/rank.html">
+                    <p class="text-[#CCCCCC] text-[16px] mt-[20px]">Rankings</p>
+                </a>
+                <a href="../pages/connect.html">
+                    <p class="text-[#CCCCCC] text-[16px] mt-[20px]">Connect a wallet</p>
+                </a>
+            </div>
+            <div>
+                <h1 class="text-[25px] text-[white]">Join our weekly digest</h1>
+                <p class="text-[#CCCCCC] text-[16px] mt-[25px]">Get exclusive promotions & updates <br> straight to your inbox.</p>
+                <div class="mt-[20px]">
+                    <input class="w-[420px] h-[60px] bg-[white] pl-[20px] rounded-[20px] text-[16px] text-[#2B2B2B]" type="email" placeholder="Enter your email here"><button class="hover-[green] h-[60px] w-[180px] bg-[#A259FF] rounded-[20px] text-[white] text-[16px] ml-[-180px]">subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="w-[1140px] mx-auto">
+            <p class="text-[#CCCCCC] text-[16px] mt-[20px] mb-[40px]">Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+    <script>
+        async function fetchNfts() {
+            try {
+                const response = await fetch("https://a7d87f28ae35b7f4.mokky.dev/finaly-project");
+                const nfts = await response.json();
+                
+                const nftList = document.getElementById("rankList");
+                nftList.innerHTML = nfts.map(nft => `
+            <div class="flex items-center pr-[250px] bg-[#3B3B3B] my-[10px] rounded-[20px] h-[84px] pl-[20px]">
+                <div class="rounded-full bg-[#2B2B2B] text-[grey] flex justify-center items-center w-[30px] h-[30px] mr-[20px]">?</div>
+                <img src="${nft.photo}" alt="">
+                <h1 class="name text-[white] ml-[80px]">${nft.title}</h1>
+                <p class="text-[green] text-[16px] ml-[190px]">+1.41%</p>
+                <p class="text-[white] text-[16px] ml-[210px]">602</p>
+                <p class="volume text-[white] ml-[220px]">${nft.description}</p>
+            </div>
+                `).join("");
+            } catch (error) {
+                console.error("Ошибка загрузки данных:", error);
+            }
+        }
+        
+        fetchNfts();
+    </script>
+</body>
+</html>
